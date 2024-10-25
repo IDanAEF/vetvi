@@ -1,0 +1,57 @@
+.page
+    &__block 
+        padding-top: 50px
+        padding-bottom: 50px
+        position: relative
+        z-index: 1
+        &.pt100
+            padding-top: 100px
+        &.pb100
+            padding-bottom: 100px
+        &.pt0
+            padding-top: 0 !important
+        &.pb0
+            padding-bottom: 0 !important
+        &__title 
+            margin-bottom: 32px
+    &__title 
+        margin-bottom: 52px
+    &__promo 
+        background: $black
+        position: relative
+        min-height: 570px
+        z-index: 2
+        overflow: hidden
+        color: $white
+        text-align: center
+        padding: 145px 0px 50px
+        display: flex
+        .container
+            display: flex
+            flex-direction: column
+        .parallax
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+        &-single
+            margin: auto auto 0
+            text-align: center
+            &.left
+                text-align: left
+                margin-left: 0
+        &-single, &-title
+            max-width: 877px
+    &__breadcrumbs
+        margin-bottom: 40px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        a, span 
+            display: flex
+            align-items: center
+            margin-right: 10px
+            margin-bottom: 10px
+            svg
+                margin-right: 9px

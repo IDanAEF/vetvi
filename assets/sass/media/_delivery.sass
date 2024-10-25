@@ -1,0 +1,70 @@
+@media (max-width: 1700px)
+    .delivery
+        &__list 
+            &-item 
+                .col
+                    .default-text
+                        padding: 0 !important
+                    .images
+                        height: 400px
+                        &.big 
+                            height: 600px
+                        &.double
+                            height: 700px
+@media (max-width: 1400px)
+    .delivery
+        &__list 
+            &-item 
+                .col
+                    .images
+                        height: 365px
+                        &.big 
+                            height: 500px
+                        &.double
+                            height: 600px
+@media (max-width: 1200px)
+    .delivery
+        &__list 
+            &-item 
+                .col
+                    .images
+                        height: 300px
+                        &.big 
+                            height: 500px
+                        &.double
+                            height: 500px
+@media (max-width: 992px)
+    .delivery
+        &__list 
+            &-item 
+                grid-template: auto / 1fr
+                gap: 20px
+                .col
+                    .images
+                        height: 300px
+                        &.big 
+                            height: 400px
+                        &.double
+                            height: 400px
+                            .images-wrap
+                                width: 100%
+@media (max-width: 768px)
+    .delivery
+        &__list 
+            &-item 
+                .col
+                    .images
+                        height: 300px !important
+                        &.double
+                            height: 400px !important
+@media (max-width: 576px)
+    .delivery
+        &__list 
+            &-item 
+                .col
+                    .images
+                        height: 58vw !important
+                        img 
+                            border-radius: 10px !important
+                        &.double
+                            height: 74vw !important

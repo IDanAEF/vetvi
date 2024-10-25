@@ -1,19 +1,305 @@
 @media (max-width: 1700px)
     .container
         width: 1320px
+    .page
+        &__promo 
+            min-height: 490px
+    .text
+        &_fz 
+            &30
+                font-size: 25px
+    .footer
+        padding: 60px 0px 30px
+    .header
+        &__nav 
+            ul 
+                li 
+                    margin-right: 20px
+        &__right 
+            .icons 
+                margin-left: 30px
 @media (max-width: 1400px) 
     .container
         width: 1140px
+    .underline-link
+        margin-top: 16px
+    .page
+        &__promo 
+            min-height: 430px
+            padding: 110px 0px 30px
+        &__breadcrumbs
+            margin-bottom: 20px
+        &__block
+            padding-top: 30px
+            padding-bottom: 30px
+            &.pb100
+                padding-bottom: 60px
+            &.pt100
+                padding-top: 60px
+            &-title 
+                margin-bottom: 24px
+        &__title 
+            margin-bottom: 32px
+    body 
+        font-size: 18px
+    h1
+        font-size: 54px
+    h2 
+        font-size: 45px
+    h3
+        font-size: 32px
+    h4 
+        font-size: 24px
+    h5 
+        font-size: 20px
+    h6
+        font-size: 18px
+    .text
+        &_fz 
+            &20
+                font-size: 18px
+            &22, &24, &26
+                font-size: 20px
+            &30
+                font-size: 24px
+            &40
+                font-size: 32px
+            &60 
+                font-size: 45px
+            &70
+                font-size: 54px
+    .header
+        padding: 15px 0px
+        &__logo 
+            margin-left: auto
+            margin-right: 190px
+            width: 250px
+            min-width: 250px
+        &__nav 
+            ul
+                li 
+                    display: none
+                    &:first-child
+                        display: flex !important
+    .footer
+        padding: 30px 0px
+        &__bott 
+            margin-top: 30px
+        &__info
+            &-row 
+                margin-bottom: 10px
+        &__logo 
+            width: 300px
+            min-width: 300px
+        &__phone 
+            width: 170px
+            margin-top: 0
+            img 
+                top: 17px
+                width: 34px
+            a 
+                margin-top: 40px
 @media (max-width: 1200px) 
     .container
         width: 960px
+    .underline-link
+        padding: 5px 0px
+    .header
+        &__logo 
+            margin-right: 100px
+    .footer
+        &__info 
+            max-width: 550px
+            &-row 
+                & > *
+                    margin-right: 20px
+        &__phone 
+            width: 160px
+        &__social
+            margin-left: 20px
+    body 
+        font-size: 16px
+    h1
+        font-size: 48px
+    h2 
+        font-size: 38px
+    h3
+        font-size: 28px
+    h4 
+        font-size: 20px
+    h5 
+        font-size: 18px
+    h6
+        font-size: 16px
+    .text
+        &_fz 
+            &16
+                font-size: 14px
+            &18, &20
+                font-size: 16px
+            &22, &24, &26
+                font-size: 18px
+            &30
+                font-size: 20px
+            &40
+                font-size: 28px
+            &60 
+                font-size: 38px
+            &70
+                font-size: 48px
+    .default-text
+        h2
+            margin-top: 20px
+            margin-bottom: 15px
+        p 
+            margin: 10px 0px
+        table
+            margin: 15px 0px
+            td 
+                padding: 5px
+        ul, ol 
+            margin: 15px 0px
 @media (max-width: 992px) 
     .container
         width: 720px
+    .page
+        &__promo 
+            padding: 90px 0px 20px
+            min-height: 350px
+    .header
+        padding: 10px 0px
+        &__right 
+            .icons 
+                margin-left: 10px
+                a
+                    margin-right: 10px
+        &__logo
+            width: 220px
+            min-width: 220px
+            margin-right: 35px
+    .footer
+        .img_bg
+            object-position: left
+        &__info 
+            max-width: 100%
+        &__phone
+            img 
+                display: none
+            a 
+                margin-top: 0
+        &__logo 
+            width: 220px
+            min-width: 220px
+        &__bott 
+            flex-direction: column-reverse
+            align-items: flex-start
+        &__social 
+            margin-left: 0
+            margin-bottom: 15px
 @media (max-width: 768px) 
     .container
         width: 540px
+    .page
+        &__block 
+            padding-top: 25px
+            padding-bottom: 25px
+            &.pt100
+                padding-top: 50px
+            &.pb100
+                padding-bottom: 50px
+            &-title 
+                margin-bottom: 16px
+        &__title 
+            margin-bottom: 20px
+    body 
+        font-size: 14px
+    h1
+        font-size: 38px
+    h2 
+        font-size: 32px
+    h3
+        font-size: 24px
+    h4 
+        font-size: 18px
+    h5 
+        font-size: 16px
+    h6
+        font-size: 14px
+    .text
+        &_fz 
+            &18, &20
+                font-size: 14px
+            &22, &24, &26
+                font-size: 16px
+            &30
+                font-size: 18px
+            &40
+                font-size: 24px
+            &60 
+                font-size: 32px
+            &70
+                font-size: 38px
+    .header
+        &__logo 
+            margin-left: 0
+            margin-right: 0
+            width: 200px
+            min-width: 200px
+        &__right 
+            & > a 
+                display: none
+            .icons
+                margin-left: 0
 @media (max-width: 576px) 
     .container
         width: 100%
         padding: 0px 15px
+    .footer
+        .img_bg
+            object-position: 24%
+@media (max-width: 420px)
+    .header
+        &__logo 
+            width: 150px
+            min-width: 150px
+    .page
+        &__promo
+            padding: 67px 0px 20px
+    .footer
+        &__head
+            flex-direction: column
+            align-items: center
+        &__social
+            flex-wrap: wrap
+            a 
+                &:first-child
+                    width: 100%
+                    margin-bottom: 10px
+        &__info 
+            &-row 
+                flex-direction: column
+                align-items: flex-start
+                & > * 
+                    margin-bottom: 5px
+                    margin-right: 0
+                    &:last-child
+                        margin-bottom: 0 !important
+        &__logo 
+            width: 150px
+            min-width: 150px
+            margin-bottom: 20px
+        &__phone 
+            a 
+                margin-left: auto
+                margin-right: auto
+@media (max-width: 370px)
+    h1
+        font-size: 30px
+    h2 
+        font-size: 27px
+    .text
+        &_fz 
+            &60 
+                font-size: 27px
+            &70
+                font-size: 30px

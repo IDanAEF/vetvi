@@ -1,0 +1,51 @@
+.delivery
+    &__list 
+        &-item 
+            display: grid
+            grid-template: auto / 1fr 1fr
+            gap: 30px
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0px !important
+            .col
+                display: flex
+                align-items: center
+                .images
+                    position: relative
+                    height: 470px
+                    width: 100%
+                    .img_bg
+                        border-radius: 20px
+                    &-wrap 
+                        position: absolute
+                        top: 0
+                        height: 100%
+                        width: 122%
+                    &.big 
+                        height: 700px
+                    &.double 
+                        height: 822px
+                        .image1, .image2
+                            position: absolute
+                            width: 57%
+                            height: 59%
+                            border-radius: 20px
+                            object-fit: cover
+                        .image1
+                            top: 0
+                            left: 0
+                        .image2
+                            bottom: 0
+                            right: 0
+                &:last-child
+                    .default-text
+                        padding-left: 60px
+                    .images
+                        &-wrap 
+                            left: 0
+                &:first-child
+                    .default-text
+                        padding-right: 60px
+                    .images
+                        &-wrap 
+                            right: 0

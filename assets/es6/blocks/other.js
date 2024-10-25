@@ -87,6 +87,25 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const parallaxes = document.querySelectorAll('.parallax');
+
+        if (parallaxes) {
+            const setPosition = () => {
+                parallaxes.forEach(item => {
+                    item.style.top = window.scrollY + 'px';
+                });
+            }
+
+            setPosition();
+
+            window.addEventListener('scroll', setPosition);
+            window.addEventListener('resize', setPosition);
+        }
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;

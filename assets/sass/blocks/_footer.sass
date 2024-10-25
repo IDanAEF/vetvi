@@ -1,0 +1,57 @@
+.footer
+    position: relative
+    padding: 120px 0px 30px
+    color: $white
+    z-index: 3
+    &__bott 
+        display: flex
+        align-items: flex-end
+        margin-top: 50px
+        & > span 
+            flex: 1
+    &__logo
+        display: flex
+        width: 401px 
+        min-width: 401px
+    &__head
+        display: flex
+        justify-content: space-between
+    &__phone 
+        width: 200px
+        position: relative
+        margin-top: 50px
+        img 
+            position: absolute
+            width: 39px
+            top: 30px
+            right: calc(100% - 8px)
+        a 
+            display: block
+            width: fit-content
+            margin-left: auto
+            margin-top: 66px
+    &__info 
+        margin-top: 34px
+        &-row 
+            margin-bottom: 18px
+            display: flex
+            align-items: center
+            & > * 
+                margin-right: 50px
+                &:last-child
+                    margin-right: 0 !important
+            &:last-child
+                margin-bottom: 0 !important
+    &__social
+        margin-left: 90px
+        &, a 
+            display: flex
+            align-items: center
+        a 
+            margin-right: 10px
+            &:last-child
+                margin-right: 0px !important
+            img 
+                width: 40px
+                min-width: 40px
+                height: 40px

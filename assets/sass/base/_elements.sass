@@ -50,6 +50,7 @@ picture
     position: relative
     margin: 0 auto
     width: 1602px
+    z-index: 1
 .img
     &_bg
         position: absolute
@@ -61,8 +62,9 @@ picture
         transform: translate(-50%, -50%)
         z-index: 0
         pointer-events: none
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4 
     font-family: 'Poiret One', 'Montserrat', sans-serif
+    font-weight: 400
 h1
     margin: 0
     font-size: 70px
@@ -75,9 +77,51 @@ h4
     font-size: 30px
 h5 
     font-size: 24px
+    font-weight: 500
 h6
     font-size: 20px
+    font-weight: 500
+.default-text
+    h2, h3, h4, h5, h6, p, table, ul, ol
+        &:last-child
+            margin-bottom: 0 !important
+        &:first-child
+            margin-top: 0 !important
+    h2
+        margin-top: 40px
+        margin-bottom: 25px
+    h3, h4, h5, h6
+        margin-top: 30px
+        margin-bottom: 20px
+    p 
+        margin: 15px 0px
+    table
+        border-collapse: collapse
+        width: 100%
+        max-width: 100%
+        margin: 20px 0px
+        td 
+            border: 1px solid $black
+            padding: 10px
+    ul, ol 
+        margin: 20px 0px
+    ol
+        padding-left: 25px
+    a 
+        text-decoration: underline
 .text 
+    &_animate
+        position: relative
+        .or
+            position: relative
+            display: inline
+            opacity: 0
+            bottom: -14px
+            font-style: inherit
+        &.anim
+            .or
+                opacity: 1
+                bottom: 0px
     &_normal
         font-style: normal
     &_italic
@@ -103,6 +147,7 @@ h6
             font-family: 'Montserrat', sans-serif
         &Poi
             font-family: 'Poiret One', 'Montserrat', sans-serif
+            font-weight: 400
     &_fw
         &100
             font-weight: 100
@@ -148,3 +193,71 @@ h6
         &70
             font-size: 70px
             line-height: 1
+.elem
+    &_animate 
+        transition: 0.5s all
+        &:not(.opacity)
+            transform: rotateX(90deg)
+        &.opacity
+            opacity: 0
+            &.anim 
+                opacity: 1
+        &:not(.opacity)
+            &.anim
+                transform: rotateX(00deg)
+        &.left, &.right, &.top, &.bott, &.scale
+            transition: 0.7s all
+            opacity: 0
+            &.anim 
+                opacity: 1
+        &.scale
+            transform: scale(0.5)
+            &.anim
+                transform: scale(1)
+        &.top
+            transform: translate3d(0, 60px, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.bott
+            transform: translate3d(0, -60px, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.right
+            transform: translate3d(-60px, 0, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.left
+            transform: translate3d(60px, 0, 0)
+            &.anim
+                transform: translate3d(0, 0, 0)
+        &.custom 
+            transform: none
+            &.anim 
+                transform: none
+.underline-link
+    display: block
+    width: fit-content
+    padding: 10px 0px
+    border-bottom: 1px dashed $black
+    font-weight: 300
+    text-align: center
+    margin-top: 32px
+    &:hover
+        border-bottom: 1px dashed $color
+.styled-ul, .default-text
+    ul 
+        list-style-type: none
+        li 
+            position: relative
+            margin-bottom: 5px
+            padding-left: 16px
+            &::before
+                content: ''
+                width: 6px
+                height: 6px
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                border-radius: 100%
+                background: $color
