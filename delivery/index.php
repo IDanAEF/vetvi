@@ -28,7 +28,7 @@
     <section class="delivery__list text_fz14 page__block pt100 pb100">
         <div class="container">
             <div class="delivery__list-item">
-                <div class="col">
+                <div class="col elem_animate right">
                     <div class="default-text">
                         <h6>Доставка осуществляется за счет покупателя.</h6>
                         <p><strong>Варианты:</strong></p>
@@ -42,7 +42,7 @@
                         <p>После оформления заказа при согласовании с менеджерами вы можете выбрать транспортную компанию для отправки груза. После этого наши логисты подадут заявку в выбранную компанию на отправку груза на имя получателя. При оформлении отправлению присваивается предварительный номер и рассчитывается предварительная стоимость. Весь груз подлежит страхованию. Также груз обеспечивается дополнительной упаковкой, так как он является хрупким. <br>Трэк-номер для отслеживания груза сразу высылается клиенту.</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate scale">
                     <div class="images big">
                         <div class="images-wrap">
                             <picture>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="delivery__list-item">
-                <div class="col">
+                <div class="col elem_animate scale">
                     <div class="images">
                         <div class="images-wrap">
                             <picture>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate left">
                     <div class="default-text">
                         <h6>Оплата доставки</h6>
                         <p>Оплата доставки осуществляется покупателем самостоятельно непосредственно в самой транспортной компании наличным или безналичным расчетом. Стоимость доставки рассчитывается индивидуально. Предварительный расчет производится после оформления заявки на транспортировку. Окончательная стоимость перевозки становится доступна в транспортной компании после передачи груза в ТК.</p>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="delivery__list-item">
-                <div class="col">
+                <div class="col elem_animate right">
                     <div class="default-text">
                         <h6>Отправка</h6>
                         <p>При наличии товара на складе отправка осуществляется в течение 7 рабочих дней с момента поступления денежных средств на расчётный счёт компании.
@@ -83,7 +83,7 @@
                         <p>Пожалуйста, забирайте ваши заказы вовремя, чтобы мы могли отправлять еще больше красивых вещей!</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate scale">
                     <div class="images">
                         <div class="images-wrap">
                             <picture>
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="delivery__list-item">
-                <div class="col">
+                <div class="col elem_animate scale">
                     <div class="images double">
                         <div class="images-wrap">
                             <picture>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate left">
                     <div class="default-text">
                         <h6>Для получения товара необходимо иметь следующие документы:</h6>
                         <ul>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="delivery__list-item">
-                <div class="col">
+                <div class="col elem_animate right">
                     <div class="default-text">
                         <h6>Доставка в страны дальнего зарубежья</h6>
                         <p>Стоимость доставки в страны дальнего зарубежья просчитывается индивидуально и может включать в себя таможенные сборы и иные пошлины, в соответствии с законодательством страны пребывания покупателя.</p>
@@ -137,7 +137,7 @@
                         <p>Пожалуйста, забирайте ваши заказы вовремя, чтобы мы могли отправлять еще больше красивых вещей!</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate scale">
                     <div class="images">
                         <div class="images-wrap">
                             <picture>

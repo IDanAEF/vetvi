@@ -27,53 +27,53 @@
     </section>
     <section class="partner__list text_fz24 text_fw500 page__block pt100 pb100">
         <div class="container">
-            <div class="partner__list-item elem_animate left">
-                <div class="col">
+            <div class="partner__list-item">
+                <div class="col elem_animate scale">
                     <picture>
                         <source srcset="<?=IMAGES_PATH?>partn1.webp" type="image/webp">
                         <img src="<?=IMAGES_PATH?>partn1.jpg" alt="" class="image">
                     </picture>
                 </div>
-                <div class="col">
+                <div class="col elem_animate left">
                     <div class="default-text">
                         <p>VETVI – это производство полного цикла: от идеи, которая зарождается в отделе новинок, до готового изделия. Мы используем только натуральные материалы и сплавы: латунь, бронза, стекло, керамика, мрамор.</p>
                     </div>
                 </div>
             </div>
-            <div class="partner__list-item elem_animate right">
-                <div class="col">
+            <div class="partner__list-item">
+                <div class="col elem_animate right">
                     <div class="default-text">
                         <p>Мы ценим долгосрочное партнёрство. Чем активнее Вы сотрудничаете с компанией, тем больше преференций получаете: первыми информацию о новинках, быстрый обмен, фиксирование цены - оплата при бронировании 40% гарантирует неизменность полной стоимости.</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate scale">
                     <picture>
                         <source srcset="<?=IMAGES_PATH?>partn2.webp" type="image/webp">
                         <img src="<?=IMAGES_PATH?>partn2.jpg" alt="" class="image">
                     </picture>
                 </div>
             </div>
-            <div class="partner__list-item elem_animate left">
-                <div class="col">
+            <div class="partner__list-item">
+                <div class="col elem_animate scale">
                     <picture>
                         <source srcset="<?=IMAGES_PATH?>partn3.webp" type="image/webp">
                         <img src="<?=IMAGES_PATH?>partn3.jpg" alt="" class="image">
                     </picture>
                 </div>
-                <div class="col">
+                <div class="col elem_animate left">
                     <div class="default-text">
                         <p>Компания VETVI приглашает всех желающих в Клуб дизайнеров. Главное преимущество: все участники первыми получают рассылку дайджеста новинок с описанием и ценами, до их появления на сайте и в соцсетях. </p>
                     </div>
                 </div>
             </div>
-            <div class="partner__list-item elem_animate right">
-                <div class="col">
+            <div class="partner__list-item">
+                <div class="col elem_animate right">
                     <div class="default-text">
                         <p>Штатные конструктор и дизайнер помогут подобрать изделие под конкретный запрос. Возможна кастомизация по цвету и размеру. Для удобства дизайнеров на сайте размещены 3D-модели каждого изделия, которые легко скачать для личного пользования.</p>
                         <p><strong>Присоединяйтесь к нашей команде.</strong></p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col elem_animate scale">
                     <picture>
                         <source srcset="<?=IMAGES_PATH?>partn4.webp" type="image/webp">
                         <img src="<?=IMAGES_PATH?>partn4.jpg" alt="" class="image">
