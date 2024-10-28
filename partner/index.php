@@ -1,7 +1,7 @@
 <?php require '../header.php'; ?>
 <main class="partner">
     <section class="page__promo">
-        <div class="parallax">
+        <div class="parallax dark">
             <picture>
                 <source srcset="<?=IMAGES_PATH?>delivery-back.webp" type="image/webp">
                 <img src="<?=IMAGES_PATH?>delivery-back.jpg" alt="VETVI" class="img_bg">

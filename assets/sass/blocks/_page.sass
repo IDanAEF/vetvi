@@ -12,7 +12,10 @@
             padding-top: 0 !important
         &.pb0
             padding-bottom: 0 !important
-        &__title 
+        &.gray
+            background: $gray-dark
+            color: $white
+        &-title 
             margin-bottom: 32px
     &__title 
         margin-bottom: 52px
@@ -35,9 +38,13 @@
             left: 0
             width: 100%
             height: 100%
+            &.dark
+                img 
+                    filter: brightness(0.4)
         &-single
             margin: auto auto 0
             text-align: center
+            text-shadow: 0 5px 5px $black
             &.left
                 text-align: left
                 margin-left: 0

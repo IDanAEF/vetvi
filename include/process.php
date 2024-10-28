@@ -29,8 +29,8 @@
                 На нашем производстве мы используем только натуральные природные материалы: <br>
                 <span class="text_color">латунь, бронза, стекло ручной работы, фарфор, керамика</span>
             </p>
-            <a href="" class="underline-link text_fz20">
-                Подробнее
+            <a href="" class="btn margin text_fz20">
+                <span>Подробнее</span>
             </a>
         </div>
     </div>

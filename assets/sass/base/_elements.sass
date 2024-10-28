@@ -136,8 +136,12 @@ h6
         color: $color
     &_gray
         color: $gray
+    &_gray2
+        color: $gray2
     &_gdark
         color: $gray-dark
+    &_green
+        color: $green
     &_underline
         text-decoration: underline
     &_upper 
@@ -234,27 +238,47 @@ h6
             transform: none
             &.anim 
                 transform: none
-.underline-link
-    display: block
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
     width: fit-content
-    padding: 10px 0px
+    padding: 10px
+    border: none
     border-bottom: 1px dashed $black
     font-weight: 300
     text-align: center
-    margin-top: 32px
+    background: none
+    cursor: pointer
+    outline: none
+    transition: 0.3s all
+    &.margin
+        margin-top: 32px
+    &.color
+        box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.1)
+        background: $color !important
+        border: none !important
+        color: $black !important
+        min-width: 250px
+        border-radius: 10px
     &:hover
-        border-bottom: 1px dashed $color
+        border-bottom: 1px solid $green
+        color: $white
+        background: $green
+        &.color
+            box-shadow: none
 .styled-ul, .default-text
     ul 
         list-style-type: none
         li 
             position: relative
             margin-bottom: 5px
-            padding-left: 16px
+            padding-left: 25px
             &::before
                 content: ''
-                width: 6px
-                height: 6px
+                width: 10px
+                height: 10px
                 position: absolute
                 top: 50%
                 transform: translateY(-50%)
