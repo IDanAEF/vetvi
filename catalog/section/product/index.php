@@ -84,7 +84,7 @@
                         <div class="dots"></div>
                     </div>
                 </div>
-                <div class="catalog-detail__text">
+                <div class="catalog-detail__text elem_animate left">
                     <div class="text-block">
                         <span class="article text_fz12 text_fw500">Артикул: 98941541435</span>
                         <h1 class="text_fz24 text_fw700 text_ffMon">

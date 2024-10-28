@@ -262,18 +262,32 @@ h6
         color: $black !important
         min-width: 250px
         border-radius: 10px
-    &:hover
+    &.gray
+        background: $gray
+        border: none !important
+        border-radius: 10px
+        padding: 10px 20px !important
+    &.border
+        padding: 10px 20px !important
+        border-radius: 10px
+        background: $white
+        border: 1px solid $black !important
+    &:hover, &.active
         border-bottom: 1px solid $green
         color: $white
         background: $green
         &.color
             box-shadow: none
+        &.gray
+            background: $color
+        &.border
+            background: $black
 .styled-ul, .default-text
     ul 
         list-style-type: none
         li 
             position: relative
-            margin-bottom: 5px
+            margin-bottom: 10px
             padding-left: 25px
             &::before
                 content: ''

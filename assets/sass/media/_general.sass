@@ -166,6 +166,9 @@
 @media (max-width: 992px) 
     .container
         width: 720px
+    .btn 
+        &.gray, &.border
+            padding: 7px 14px !important
     .page
         &__promo 
             padding: 90px 0px 20px
@@ -203,6 +206,14 @@
 @media (max-width: 768px) 
     .container
         width: 540px
+    .styled-ul, .default-text
+        ul 
+            li 
+                padding-left: 18px
+                margin-bottom: 5px
+                &::before
+                    width: 6px
+                    height: 6px
     .page
         &__block 
             padding-top: 25px

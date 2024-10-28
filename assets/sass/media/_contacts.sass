@@ -1,0 +1,108 @@
+@media (max-width: 1700px)
+    .contacts
+        &__list 
+            .wrap 
+                padding: 50px
+            .country
+                margin-bottom: 16px
+                margin-top: 32px
+        &__promo
+            &-open 
+                .images 
+                    img 
+                        height: 195px
+            &-info
+                margin-right: 100px
+@media (max-width: 1400px)
+    .contacts
+        &__list 
+            .wrap 
+                margin-top: -100px
+            .country
+                &-item 
+                    &-list 
+                        gap: 20px
+        &__promo
+            padding-bottom: 100px
+            &-open 
+                .images 
+                    img 
+                        height: 150px
+                        border-radius: 10px
+@media (max-width: 1200px)
+    .contacts
+        &__promo
+            &-info 
+                margin-right: 50px
+            &-open 
+                .images 
+                    gap: 10px
+                    .img 
+                        height: 150px
+        &__list 
+            .country
+                .btn 
+                    margin-right: 10px
+                    margin-bottom: 10px
+@media (max-width: 992px)
+    .contacts
+        &__promo
+            &-row 
+                flex-direction: column
+            &-info 
+                margin-right: 0
+                margin-bottom: 30px
+            &-open 
+                width: 100%
+        &__list 
+            .wrap 
+                padding: 30px 20px
+                border-radius: 30px
+            .country
+                &-item 
+                    &-list 
+                        grid-template: auto / repeat(3, 1fr)
+                    &-place 
+                        strong 
+                            margin-bottom: 10px
+                        span 
+                            margin-bottom: 5px
+@media (max-width: 768px)
+    .contacts
+        &__list 
+            .country
+                &-item 
+                    &-list 
+                        gap: 15px
+        &__promo 
+            h1, h2 
+                margin-bottom: 15px
+            &-info 
+                & > a, & > span 
+                    margin-top: 8px
+            &-open 
+                .images
+                    img 
+                        height: 130px
+@media (max-width: 576px)
+    .contacts
+        &__promo 
+            &-open 
+                .images
+                    img 
+                        height: 23vw
+        &__list 
+            .wrap 
+                padding: 20px 10px
+                border-radius: 20px
+            .country
+                &-item
+                    &-list
+                        grid-template: auto / 1fr 1fr
+@media (max-width: 420px)
+    .contacts
+        &__list 
+            .country
+                &-item
+                    &-list
+                        grid-template: auto / 1fr

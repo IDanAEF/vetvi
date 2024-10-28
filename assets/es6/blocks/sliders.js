@@ -32,6 +32,55 @@ const sliders = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const waySliders = document.querySelectorAll('.about__way-slider');
+
+        waySliders.forEach(waySlider => {
+            const sliderItems = waySlider.querySelectorAll('.about__way-slider-item');
+            
+            let all = sliderItems.length,
+                count = Math.floor(all / 2);
+
+            const setSlider = () => {
+                if (count < 0) count = all - 1;
+                if (count >= all) count = 0;
+
+                sliderItems.forEach(item => item.classList.remove('active', 'left', 'right'));
+
+                if (count - 1 >= 0) sliderItems[count - 1].classList.add('left');
+                sliderItems[count].classList.add('active');
+                if (count + 1 < sliderItems.length) sliderItems[count + 1].classList.add('right');
+            }
+
+            setSlider();
+
+            sliderItems.forEach((item, i) => {
+                item.addEventListener('click', () => {
+                    count = i;
+                    setSlider();
+                });
+            });
+
+            let startPos = 0;
+        
+            waySlider.addEventListener('touchstart', (e) => {
+                startPos = e.changedTouches[0].screenX;
+            });
+        
+            waySlider.addEventListener('touchend', (e) => {
+                if (startPos - e.changedTouches[0].screenX > 50) {
+                    count++;
+                    setSlider();
+                } else if (startPos - e.changedTouches[0].screenX < -50) {
+                    count--;
+                    setSlider();
+                }
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default sliders;

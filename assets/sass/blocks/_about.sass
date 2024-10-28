@@ -1,0 +1,98 @@
+.about
+    &__info 
+        &-row
+            display: flex
+            align-items: flex-start
+            justify-content: flex-end
+            margin-bottom: 100px
+            .default-text
+                flex: 1
+            &:last-child
+                margin-bottom: 0 !important
+            .image
+                width: 785px
+                min-width: 785px
+                height: 680px
+                position: relative
+                border-radius: 20px
+                overflow: hidden
+                margin-top: -190px
+                & + .default-text
+                    margin-left: 90px
+                    max-width: 555px
+            .default-text + .image
+                margin-left: 90px
+                margin-top: 0 !important
+    &__way 
+        &-slider
+            height: 586px
+            position: relative
+            &-item 
+                position: absolute
+                transition: 0.5s all
+                height: 100%
+                width: 790px
+                border-radius: 20px
+                overflow: hidden
+                left: 50%
+                transform: translateX(-50%)
+                opacity: 0
+                padding: 30px
+                display: flex
+                align-items: flex-end
+                cursor: pointer
+                &::before 
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 65%
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%)
+                    z-index: 2
+                    pointer-events: none
+                .default-text
+                    position: relative
+                    z-index: 3
+                &.active, &.left, &.right
+                    opacity: 1
+                &.left
+                    transform: translateX(-110%) scale(0.8)
+                &.right
+                    transform: translateX(10%) scale(0.8)
+                &.active
+                    z-index: 2
+                
+    &__dop 
+        position: relative
+        .img_bg
+            object-position: left center
+        .default-text 
+            max-width: 731px
+        &-row 
+            display: flex
+            align-items: flex-start
+            .images
+                width: 747px
+                min-width: 747px
+                height: 887px
+                margin-right: 80px
+                position: relative
+                margin-top: -140px
+                img
+                    position: absolute
+                    border-radius: 20px
+                    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1)
+                    object-fit: cover
+                .image1
+                    top: 0
+                    left: 0
+                    width: 65.4%
+                    height: 90.5%
+                .image2
+                    right: 0
+                    bottom: 0
+                    width: 49.5%
+                    height: 57.8%
+            .default-text
+                flex: 1
