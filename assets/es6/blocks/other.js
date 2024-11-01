@@ -106,6 +106,38 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const modal = document.querySelector('.modal'),
+              modalBtns = document.querySelectorAll('[data-call-modal]'),
+              modalItems = document.querySelectorAll('.modal__item');
+
+        modalBtns.forEach(btn => {
+            if (btn.getAttribute('data-call-modal')) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    modalItems.forEach(item => item.classList.remove('active'));
+
+                    modal.classList.add('active');
+                    modal.querySelector('.modal__item[data-modal="'+btn.getAttribute('data-call-modal')+'"]')
+                        .classList.add('active');
+
+                    hideScroll();
+                });
+            }
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target == modal || e.target.classList.contains('modal__close')) {
+                modalItems.forEach(item => item.classList.remove('active'));
+                modal.classList.remove('active');
+                showScroll();
+            }
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;

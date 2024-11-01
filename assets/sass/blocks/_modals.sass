@@ -1,0 +1,48 @@
+.modal
+    position: fixed
+    z-index: 15
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(0, 0, 0, 0.5)
+    transition: 0.5s all
+    opacity: 0
+    visibility: hidden
+    &.active
+        opacity: 1
+        visibility: visible
+    &__wrap
+        max-height: 95vh
+        // overflow: auto
+    &__close
+        position: absolute
+        width: 28px
+        height: 28px
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 15px
+        right: 15px
+        cursor: pointer
+        z-index: 2
+        &::before, &::after
+            content: ''
+            background: $black
+            height: 1px
+            width: 100%
+            position: absolute
+            pointer-events: none
+        &::before 
+            transform: rotate(45deg)
+        &::after
+            transform: rotate(-45deg)
+    &__item 
+        position: relative
+        display: none
+        max-width: 94%
+        &.active
+            display: block

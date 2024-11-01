@@ -1,0 +1,77 @@
+@media (max-width: 1700px)
+    .cart
+        &__info 
+            width: 420px
+            margin-left: 50px
+        &__products
+            &-item 
+                &-left
+                    width: 50%
+                    max-width: 420px
+@media (max-width: 1400px)
+    .cart
+        &__info 
+            width: 380px
+            margin-left: 20px
+            padding: 15px
+            &-btn, &-text
+                margin-top: 15px
+            &-row 
+                margin-top: 5px
+                .line 
+                    margin: 0px 5px
+                .old-price 
+                    margin-left: 10px
+        &__products
+            &-item 
+                margin-top: 15px
+                padding-left: 0
+                padding-bottom: 10px
+                &-right 
+                    & > * 
+                        margin-right: 15px
+                &-left 
+                    width: 45%
+                    .article 
+                        margin-bottom: 10px
+                    .image
+                        margin-right: 15px
+@media (max-width: 1200px)
+    .cart
+        &__products
+            &-item 
+                flex-direction: column
+                &-left, &-right 
+                    width: 100%
+                    max-width: 100%
+                &-right 
+                    justify-content: flex-end
+                &-left 
+                    margin-bottom: 15px
+@media (max-width: 992px)
+    .cart
+        &__cols 
+            flex-direction: column-reverse
+        &__products, &__info 
+            width: 100%
+        &__info 
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 30px
+@media (max-width: 768px)
+    .cart
+        &__products
+            &-item 
+                &-left 
+                    .descr 
+                        font-size: 20px
+@media (max-width: 576px)
+    .cart
+        &__products
+            &-item 
+                &-right
+                    span 
+                        font-size: 12px
+                    .plus 
+                        input, i 
+                            font-size: 14px
