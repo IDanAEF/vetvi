@@ -59,15 +59,74 @@
                 <a href="/" class="header__logo">
                     <img src="<?=IMAGES_PATH?>logo-header.svg" alt="VETVI">
                 </a>
-                <div class="header__right">
-                    <a href="tel:+79871444141">+7 (987) 144 41 41</a>
+                <div class="header__right search-field">
+                    <a href="tel:+79871444141" class="search-hide">+7 (987) 144 41 41</a>
                     <div class="icons">
-                        <a href="">
+                        <form action="/" class="search-form">
+                            <input type="text" name="search-string" value="" required>
+                        </form>
+                        <i class="search-btn text_normal">
                             <img src="<?=IMAGES_PATH?>icons/loop.svg" alt="Поиск">
-                        </a>
+                        </i>
                         <a href="/cart/">
                             <span>2</span>
                             <img src="<?=IMAGES_PATH?>icons/cart.svg" alt="Корзина">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <div class="header__mobile-wrap">
+                    <div class="header__mobile-top search-field">
+                        <img src="<?=IMAGES_PATH?>icons/close.svg" alt="Закрыть" class="header__mobile-close">
+                        <a href="/" class="header__mobile-logo search-hide">
+                            <img src="<?=IMAGES_PATH?>logo-small.svg" alt="Vetvi">
+                        </a>
+                        <form action="/" class="search-form">
+                            <input type="text" name="search-string" value="" required>
+                        </form>
+                        <i class="search-btn text_normal">
+                            <img src="<?=IMAGES_PATH?>icons/loop.svg" alt="Поиск">
+                        </i>
+                    </div>
+                    <nav class="header__mobile-nav text_fz16">
+                        <ul>
+                            <li><a href="/catalog/section/">Люстры</a></li>
+                            <li><a href="/catalog/section/">Подвесы</a></li>
+                            <li><a href="/catalog/section/">Бра</a></li>
+                            <li><a href="/catalog/section/">Настольные лампы</a></li>
+                            <li><a href="/catalog/section/">Торшеры</a></li>
+                            <li><a href="/catalog/section/">Зеркала</a></li>
+                            <li><a href="/catalog/section/">Дверные ручки</a></li>
+                            <li><a href="/catalog/section/">Декор</a></li>
+                            <li><a href="/catalog/section/">Мебель</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="header__mobile-nav text_fz16 text_fw600">
+                        <ul>
+                            <li><a href="/catalog/">Каталог</a></li>
+                            <li><a href="/delivery/">Оплата и доставка</a></li>
+                            <li><a href="/about/">О компании</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
+                            <li><a href="/">Статьи</a></li>
+                            <li><a href="/partner/">Дилеры</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+79871444141" class="header__mobile-phone">
+                        +7 (987) 144-41-41
+                    </a>
+                    <div class="icons">
+                        <a href="">
+                            <img src="<?=IMAGES_PATH?>icons/telegram-light.svg" alt="telegram">
+                        </a>
+                        <a href="">
+                            <img src="<?=IMAGES_PATH?>icons/youtube-light.svg" alt="youtube">
+                        </a>
+                        <a href="">
+                            <img src="<?=IMAGES_PATH?>icons/whatsapp-light.svg" alt="whatsapp">
+                        </a>
+                        <a href="">
+                            <img src="<?=IMAGES_PATH?>icons/pinterest-light.svg" alt="pinterest">
                         </a>
                     </div>
                 </div>

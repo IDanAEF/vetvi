@@ -1,6 +1,8 @@
 @media (max-width: 1700px)
     .container
         width: 1320px
+    .header__mobile-wrap
+        padding-left: calc((100vw - 1320px) / 2) !important
     .page
         &__promo 
             min-height: 490px
@@ -21,6 +23,8 @@
 @media (max-width: 1400px) 
     .container
         width: 1140px
+    .header__mobile-wrap
+        padding-left: calc((100vw - 1140px) / 2) !important
     .btn
         &.margin
             margin-top: 16px
@@ -88,6 +92,14 @@
                 font-size: 54px
     .header
         padding: 15px 0px
+        &__mobile
+            &-nav, &-top 
+                margin-bottom: 20px
+            &-nav 
+                ul 
+                    li 
+                        a 
+                            padding-bottom: 5px
         &__logo 
             margin-left: auto
             margin-right: 190px
@@ -120,6 +132,8 @@
 @media (max-width: 1200px) 
     .container
         width: 960px
+    .header__mobile-wrap
+        padding-left: calc((100vw - 960px) / 2) !important
     .btn
         padding: 5px
         &.color
@@ -128,6 +142,17 @@
     .header
         &__logo 
             margin-right: 100px
+        &__mobile 
+            &-logo 
+                width: 85px
+            &-wrap
+                border-radius: 0 15px 15px 0
+                padding: 20px 15px 15px
+            &-nav 
+                ul 
+                    li 
+                        a 
+                            padding-bottom: 0
     .footer
         &__info 
             max-width: 550px
@@ -183,6 +208,8 @@
 @media (max-width: 992px) 
     .container
         width: 720px
+    .header__mobile-wrap
+        padding-left: calc((100vw - 720px) / 2) !important
     .btn 
         &.gray, &.border
             padding: 7px 14px !important
@@ -195,7 +222,7 @@
         &__right 
             .icons 
                 margin-left: 10px
-                a
+                a, i
                     margin-right: 10px
         &__logo
             width: 220px
@@ -223,6 +250,8 @@
 @media (max-width: 768px) 
     .container
         width: 540px
+    .header__mobile-wrap
+        padding-left: calc((100vw - 540px) / 2) !important
     .styled-ul, .default-text
         ul 
             li 
@@ -286,6 +315,26 @@
     .container
         width: 100%
         padding: 0px 15px
+    .header__mobile-wrap
+        padding-left: 15px !important
+    .header
+        &__mobile
+            &-wrap
+                border-radius: 0
+                padding: 15px
+                width: 100%
+                height: 100%
+            &-logo 
+                width: 113px
+            &-phone 
+                font-size: 20px
+            &-nav 
+                font-size: 16px
+                margin-bottom: 25px
+                ul 
+                    li 
+                        a 
+                            padding-bottom: 5px
     .form 
         padding: 20px 15px
         width: 350px

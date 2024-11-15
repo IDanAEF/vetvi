@@ -138,6 +138,81 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const burger = document.querySelector('.header .burger'),
+              headerMobile = document.querySelector('.header__mobile');
+
+        burger.addEventListener('click', () => {
+            burger.classList.add('active');
+            headerMobile.classList.add('active');
+            hideScroll();
+        });
+
+        headerMobile.addEventListener('click', (e) => {
+            if (e.target == headerMobile || e.target.classList.contains('header__mobile-close')) {
+                burger.classList.remove('active');
+                headerMobile.classList.remove('active');
+                showScroll()
+            }
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
+        const searchField = document.querySelectorAll('.search-field');
+
+        searchField.forEach(field => {
+            const form = field.querySelector('.search-form'),
+                  searchHide = field.querySelector('.search-hide'),
+                  searchFormInput = form.querySelector('input'),
+                  searchBtn = form.nextElementSibling;
+
+            let focus = false,
+                out = false;
+      
+            const setActive = () => {
+                form.classList.add('active');
+                searchBtn.classList.add('active');
+                searchHide.classList.add('hide');
+            }
+            const removeActive = () => {
+                form.classList.remove('active');
+                searchBtn.classList.remove('active');
+                searchHide.classList.remove('hide');
+            }
+            searchBtn.onmouseenter = () => {
+                setActive();
+                out = false;
+            }
+            form.onmouseenter = () => {
+                setActive();
+                out = false;
+            }
+    
+            searchBtn.onmouseleave = () => {
+                if (!focus) removeActive();
+                out = true;
+            }
+            form.onmouseleave = () => {
+                if (!focus) removeActive();
+                out = true;
+            }
+    
+            searchBtn.addEventListener('click', () => {
+                if (form.classList.contains('active') && searchFormInput.value) 
+                    form.submit();
+            });
+            searchFormInput.addEventListener('focus', () => focus = true);
+            searchFormInput.addEventListener('blur', () => {
+                focus = false;
+                if (out) removeActive();
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;

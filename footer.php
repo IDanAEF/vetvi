@@ -55,8 +55,8 @@
         </footer>
     </div>
 
-    <div class="modal active">
-        <div class="modal__item active" data-modal="feedback">
+    <div class="modal">
+        <div class="modal__item" data-modal="feedback">
             <div class="modal__close"></div>
             <div class="modal__wrap">
                 <form action="" class="form">
