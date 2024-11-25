@@ -18,18 +18,46 @@
             </div>
             <h1 class="page__title elem_animate bott">Корзина</h1>
             <div class="cart__cols">
-                <div class="cart__products elem_animate left">
+                <form action="" class="cart__form form">
+                    <div class="form-head text_fz24">
+                        <strong>Укажите свои контактные данные</strong>
+                    </div>
+                    <label class="form-label">
+                        <input type="text" name="feedname" placeholder="Ваше имя*" required>
+                    </label>
+                    <label class="form-label">
+                        <input type="tel" name="feedphone" placeholder="Телефон*" required>
+                    </label>
+                    <label class="form-label">
+                        <input type="email" name="feedmail" placeholder="Email*" required>
+                    </label>
+                    <label class="form-label">
+                        <input type="text" name="feedaddress" placeholder="Полный адрес доставки с индексом">
+                    </label>
+                    <div class="form-label">
+                        <button class="text_fz16">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                    <div class="form-policy text_fz12">
+                        <span>
+                            *Нажимая на кнопку “Отправить заявку” вы соглашаетесь с <a href="/privacy/" class="text_color">обработкой персональных данных и политикой конфиденциальности</a>
+                        </span>
+                    </div>
+                </form>
+                <div class="cart__list">
+                    <strong class="col-name text_fz24">Список товаров</strong>
                     <div class="cart__products-item">
                         <div class="cart__products-item-left">
                             <a href="" class="image">
                                 <img src="<?=IMAGES_PATH?>cart-image1.png" alt="OLIVIA BLACK">
                             </a>
                             <div class="descr text_ffPoi text_fz26">
+                                <a href="">OLIVIA BLACK</a>
                                 <div class="article text_fz16">
                                     <span>Артикул:</span>
                                     116744
                                 </div>
-                                <a href="">OLIVIA BLACK</a>
                             </div>
                         </div>
                         <div class="cart__products-item-right text_fw500">
@@ -38,52 +66,11 @@
                                 <input type="text" value="1">
                                 <span class="inc"></span>
                             </div>
-                            <span class="text_fz14 old">
-                                <i class="text_normal">3 800</i> ₽/шт
-                            </span>
                             <span class="text_fz16">
                                 <i class="text_normal">2 800</i> ₽
                             </span>
                             <img src="<?=IMAGES_PATH?>icons/remove.svg" alt="Удалить" class="remove">
                         </div>
-                    </div>
-                    <div class="cart__products-item">
-                        <div class="cart__products-item-left">
-                            <a href="" class="image">
-                                <img src="<?=IMAGES_PATH?>cart-image2.png" alt="OLIVIA BLACK">
-                            </a>
-                            <div class="descr text_ffPoi text_fz26">
-                                <div class="article text_fz16">
-                                    <span>Артикул:</span>
-                                    116744
-                                </div>
-                                <a href="">OLIVIA BLACK</a>
-                            </div>
-                        </div>
-                        <div class="cart__products-item-right text_fw500">
-                            <div class="plus">
-                                <span class="decr"></span>
-                                <input type="text" value="1">
-                                <span class="inc"></span>
-                            </div>
-                            <span class="text_fz14 old">
-                                <i class="text_normal">3 800</i> ₽/шт
-                            </span>
-                            <span class="text_fz16">
-                                <i class="text_normal">2 800</i> ₽
-                            </span>
-                            <img src="<?=IMAGES_PATH?>icons/remove.svg" alt="Удалить" class="remove">
-                        </div>
-                    </div>
-                </div>
-                <div class="cart__info elem_animate right">
-                    <div class="cart__info-row">
-                        <span>Итого:</span>
-                        <div class="line"></div>
-                        <span>
-                            <strong class="text_fz30">5 600 ₽</strong>
-                            <span class="old-price">7 600 ₽</span>
-                        </span>
                     </div>
                     <div class="cart__info-row">
                         <span>Итого:</span>
@@ -93,13 +80,6 @@
                             <span class="old-price">7 600 ₽</span>
                         </span>
                     </div>
-                    <div class="cart__info-text text_fw600">
-                        <img src="<?=IMAGES_PATH?>icons/discount.svg" alt="Экономия">
-                        Выберите товары на сумму от&nbsp;10&nbsp;000&nbsp;руб и <span class="text_color">сэкономьте 15%</span>
-                    </div>
-                    <button class="cart__info-btn btn color">
-                        <span>Оформить заказ</span>
-                    </button>
                 </div>
             </div>
         </div>

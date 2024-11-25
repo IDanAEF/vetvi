@@ -1,0 +1,28 @@
+.thanks
+    &__info 
+        max-width: 600px
+        width: 100%
+        margin: 120px auto 0
+        & > strong, & > span 
+            display: block
+            text-align: center
+        & > strong 
+            margin-bottom: 10px
+            color: #aeaeae
+        & > span 
+            margin-bottom: 20px
+        .btn
+            margin-top: 60px
+    &__table 
+        background: rgba(199, 178, 153, 0.3)
+        &-row 
+            display: grid
+            grid-template: auto / 1fr 1fr 
+            gap: 10px
+            padding: 9px 12px
+            strong
+                color: #929292
+            span 
+                text-align: right
+            &:nth-child(2n)
+                background: $white

@@ -2,6 +2,46 @@
     &__cols 
         display: flex
         align-items: flex-start
+        .col-name
+            display: block
+            margin-bottom: 30px
+    &__form 
+        flex: 1
+    &__list 
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05)
+        background: $white
+        padding: 30px
+        border-radius: 5px
+        width: 750px
+        margin-left: 20px
+    &__search
+        position: relative
+        width: 100%
+        margin-bottom: 110px
+        input 
+            width: 100%
+            padding: 23px 23px 23px 60px
+            border: none 
+            background: $white
+            border-bottom: 1px solid $black
+            outline: none
+        button 
+            border: none
+            background: none
+            cursor: pointer
+            width: 24px
+            height: 24px
+            position: absolute
+            left: 6px
+            top: 50%
+            transform: translateY(-50%)
+            img 
+                width: 100%
+                transition: 0.3s filter
+                filter: brightness(0)
+            &:hover 
+                img 
+                    filter: none
     &__info 
         width: 494px
         border-radius: 5px
@@ -13,6 +53,8 @@
             margin-top: 30px
         &-text 
             margin-top: 30px
+            &:first-child
+                margin-top: 0 !important
             img, svg 
                 width: 24px
                 min-width: 24px
@@ -55,6 +97,10 @@
                     margin-right: 30px
                     &:last-child
                         margin-right: 0 !important
+                .more-link
+                    margin-right: 80px !important
+                    display: flex
+                    width: fit-content
                 .old
                     color: $gray2
                     text-decoration: line-through
@@ -99,6 +145,16 @@
                 align-items: center
                 width: 60%
                 max-width: 500px
+                &.bigger
+                    width: 70%
+                    max-width: unset
+                .descr
+                    & > span 
+                        font-family: 'Montserrat', sans-serif
+                        opacity: 0.5
+                        margin-top: 15px
+                        display: block
+                        font-weight: 500
                 .image 
                     width: 67px
                     min-width: 67px
@@ -110,7 +166,7 @@
                         height: 100%
                         object-fit: cover
                 .article 
-                    margin-bottom: 15px
+                    margin-top: 15px
                     display: flex
                     align-items: center
                     font-weight: 500

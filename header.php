@@ -2,7 +2,13 @@
     define('IMAGES_PATH', '/assets/images/');
     define('CLEAR_PATH', preg_replace('/\\?.*/', '', $_SERVER['REQUEST_URI']));
 
-    $blackHeader = CLEAR_PATH == '/privacy/' || CLEAR_PATH == '/catalog/section/product/' || CLEAR_PATH == '/404/' || CLEAR_PATH == '/cart/';
+    $blackHeader = 
+        CLEAR_PATH == '/privacy/' || 
+        CLEAR_PATH == '/catalog/section/product/' || 
+        CLEAR_PATH == '/404/' || 
+        CLEAR_PATH == '/cart/' || 
+        CLEAR_PATH == '/cart/thanks/' || 
+        CLEAR_PATH == '/search/';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
