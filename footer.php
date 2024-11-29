@@ -100,6 +100,16 @@
         </div>
     </div>
 
+    <div class="page__loading">
+        <img src="<?=IMAGES_PATH?>logo-color.svg" alt="logo">
+        <div class="page__loading-progress">
+            <div class="dash">
+                <span></span>
+            </div>
+            <div class="number text_fz24 text_fw700">0%</div>
+        </div>
+    </div>
+
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/slick.min.js"></script>
     <script src="/assets/js/jquery.fancybox.min.js"></script>

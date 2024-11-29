@@ -213,6 +213,71 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const mediaItems = document.querySelectorAll('video'),
+              pageLoading = document.querySelector('.page__loading');
+
+        if (pageLoading && mediaItems.length > 0) {
+            pageLoading.classList.add('active');
+            setTimeout(() => {
+                pageLoading.classList.add('setted');
+            }, 100);
+            hideScroll();
+
+            const pageLoadingDash = pageLoading.querySelector('.page__loading-progress .dash span'),
+                  pageLoadingNum = pageLoading.querySelector('.page__loading-progress .number');
+
+            let loaded = 0,
+                loadedPart = 0,
+                loadedMax = Math.ceil(100 / mediaItems.length); 
+
+            const setProgress = async (item) => {
+                let response = await fetch(item.src),
+                    reader = response.body.getReader(),
+                    contentLength = +response.headers.get('Content-Length'),
+                    receivedLength = 0,
+                    progress = 0,
+                    onepart = 0;
+
+                while(true) {
+                    const {done, value} = await reader.read();
+
+                    if (done) {
+                        loadedPart += loadedMax; 
+                        loaded = loadedPart;
+
+                        if (loaded > 100) loaded = 100;
+
+                        if (loaded == 100) {
+                            pageLoading.classList.remove('active');
+                            showScroll();
+                        }
+
+                        break;
+                    }
+
+                    receivedLength += value.length;
+
+                    progress = Math.ceil(receivedLength / (contentLength / 100));
+                    onepart = loadedPart + Math.ceil(progress * (loadedMax / 100));
+                    loaded = onepart > loaded ? onepart : loaded;
+
+                    if (loaded > 100) loaded = 100;
+
+                    pageLoadingDash.style.width = `${loaded}%`;
+                    pageLoadingNum.textContent = `${loaded}%`;
+                }
+            }
+
+            mediaItems.forEach(media => setProgress(media));
+        } else if (pageLoading && mediaItems.length <= 0) {
+            pageLoading.classList.remove('active');
+            showScroll();
+        }
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;
