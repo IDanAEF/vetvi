@@ -27,6 +27,7 @@
                     </div>
                 </div>
                 <picture class="home__company-image <?=$item?>">
+                    <source srcset="<?=IMAGES_PATH?>company<?=($key + 1)?>.webp" type="image/webp">
                     <img src="<?=IMAGES_PATH?>company<?=($key + 1)?>.png" alt="О компании">
                 </picture>
             </div>
