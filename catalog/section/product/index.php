@@ -87,7 +87,7 @@
                 <div class="catalog-detail__text elem_animate left">
                     <div class="text-block">
                         <span class="article text_fz12 text_fw500">Артикул: 98941541435</span>
-                        <h1 class="text_fz24 text_fw700 text_ffMon">
+                        <h1 class="text_fz24 text_ffMon">
                             OLIVIA BLACK <span class="text_gray2">Люстра</span>
                         </h1>
                         <span class="price text_fw500">
@@ -105,8 +105,12 @@
                             Выберите вариант
                         </strong>
                         <div class="variant text_fz16">
-                            <div class="variant-item active">M</div>
-                            <div class="variant-item">L</div>
+                            <div class="variant-block">
+                                <div class="variant-item active">M</div>
+                                <div class="variant-item">L</div>
+                                <div class="variant-item">L</div>
+                                <div class="variant-item">L</div>
+                            </div>
                             <button class="btn color text_fz20">
                                 <span>Заказать</span>
                             </button>
@@ -160,6 +164,20 @@
                                 <img src="<?=IMAGES_PATH?>icons/scheme.svg" alt="">
                                 <span>Схема подключения</span>
                             </a>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <div class="catalog-detail__text-banner text_white">
+                            <div class="text">
+                                <strong class="text_fw500">3D визуализация бесплатно!</strong>
+                                <p class="text_fz14">Вписываем схемы расстановки, планировки изделия в интерьер Вашего проекта.</p>
+                                <button class="btn color" data-call-modal="feedback">
+                                    <span>Заказать</span>
+                                </button>
+                            </div>
+                            <picture>
+                                <img src="<?=IMAGES_PATH?>3d-banner.png" alt="3D визуализация бесплатно!" class="image">
+                            </picture>
                         </div>
                     </div>
                     <div class="text-block">

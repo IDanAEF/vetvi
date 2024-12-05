@@ -29,7 +29,7 @@
         $hideTitle = true;
         require '../include/catalog.php';
     ?>
-    <?php require '../include/about.php'; ?>
+    <?php require '../include/company.php'; ?>
     <?php require '../include/video.php'; ?>
     <?php require '../include/process.php'; ?>
 </main>

@@ -1,8 +1,8 @@
         <footer class="footer">
-            <picture>
+            <!-- <picture>
                 <source srcset="<?=IMAGES_PATH?>footer-back.webp" type="image/webp">
                 <img src="<?=IMAGES_PATH?>footer-back.jpg" alt="footer-back" class="img_bg">
-            </picture>
+            </picture> -->
             <div class="container">
                 <div class="footer__top">
                     <div class="footer__head">
