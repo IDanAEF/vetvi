@@ -8,7 +8,8 @@
         CLEAR_PATH == '/404/' || 
         CLEAR_PATH == '/cart/' || 
         CLEAR_PATH == '/cart/thanks/' || 
-        CLEAR_PATH == '/search/';
+        CLEAR_PATH == '/search/' || 
+        CLEAR_PATH == '/contacts/';
 ?>
 <!DOCTYPE html>
 <html lang="ru">

@@ -1,63 +1,61 @@
 @media (max-width: 1700px)
     .contacts
+        &__content
+            &-map 
+                width: 700px
         &__list 
             .wrap 
-                padding: 50px
+                padding: 0 50px
             .country
                 margin-bottom: 16px
                 margin-top: 32px
-        &__promo
-            &-open 
-                .images 
-                    img 
-                        height: 195px
-            &-info
-                margin-right: 100px
+            .images 
+                img 
+                    height: 195px
 @media (max-width: 1400px)
     .contacts
+        &__content
+            &-map 
+                width: 600px
+                height: 300px
+                margin-left: 20px
         &__list 
-            .wrap 
-                margin-top: -100px
             .country
                 &-item 
                     &-list 
                         gap: 20px
-        &__promo
-            padding-bottom: 100px
-            &-open 
-                .images 
-                    img 
-                        height: 150px
-                        border-radius: 10px
+            .images 
+                img 
+                    height: 150px
+                    border-radius: 10px
 @media (max-width: 1200px)
-    .contacts
-        &__promo
-            &-info 
-                margin-right: 50px
-            &-open 
-                .images 
-                    gap: 10px
-                    .img 
-                        height: 150px
+    .contacts 
+        &__content
+            &-map 
+                width: 500px
+                height: 250px
         &__list 
+            .images 
+                gap: 10px
+                .img 
+                    height: 150px
             .country
                 .btn 
                     margin-right: 10px
                     margin-bottom: 10px
 @media (max-width: 992px)
     .contacts
-        &__promo
+        &__content
             &-row 
                 flex-direction: column
-            &-info 
-                margin-right: 0
-                margin-bottom: 30px
-            &-open 
+            &-map 
                 width: 100%
+                height: 350px
+                margin-left: 0
+                margin-top: 20px
         &__list 
             .wrap 
-                padding: 30px 20px
-                border-radius: 30px
+                padding: 0 20px
             .country
                 &-item 
                     &-list 
@@ -74,27 +72,23 @@
                 &-item 
                     &-list 
                         gap: 15px
-        &__promo 
-            h1, h2 
-                margin-bottom: 15px
-            &-info 
-                & > a, & > span 
-                    margin-top: 8px
-            &-open 
-                .images
-                    img 
-                        height: 130px
+            .images
+                img 
+                    height: 130px
 @media (max-width: 576px)
     .contacts
-        &__promo 
-            &-open 
-                .images
-                    img 
-                        height: 23vw
+        &__content
+            &-map 
+                height: 200px
         &__list 
+            .images
+                grid-template: auto / 1fr 1fr
+                img 
+                    height: 33vw
+                    &:last-child
+                        grid-column: 1 / 3
             .wrap 
-                padding: 20px 10px
-                border-radius: 20px
+                padding: 0 10px
             .country
                 &-item
                     &-list
